@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+
+<body>
+
+    <div class="a-logo"><img src="assets/img/logo.png" alt=""></div>
+
+    <main id="p-quizz">
+        <!-- Questions -->
+
+        <section class="s-question">
+
+
+            <img class="s-question--corner" src="assets/svg/corner.svg" alt="">
+
+            <div class="s-question--counter">
+                <span class="a-counter">
+                    <span class="a-counter--index">1</span> /
+                    <span class="a-counter--total">2</span>
+                </span>
+
+            </div>
+
+            <div class="g-flux m-small m-pad">
+                <div class="c-question">
+                    <h2 class="c-question--section t4"></h2>
+                    <h3 class="c-question--title t5"></h3>
+                    <p class="c-question--text t3"></p>
+
+                    <div class="c-question--answers">
+
+                        <label class="c-question--answer a-radio">
+                            <input type="radio" name="answer">
+                            <span>Non, pas vraiment</span>
+                        </label>
+
+                        <label class="c-question--answer a-radio">
+                            <input type="radio" name="answer">
+                            <span>Un peu</span>
+                        </label>
+
+                        <label class="c-question--answer a-radio">
+                            <input type="radio" name="answer">
+                            <span>Oui, mais en partie</span>
+                        </label>
+
+                        <label class="c-question--answer a-radio">
+                            <input type="radio" name="answer">
+                            <span>Oui, le plus souvent</span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <div class="s-question--actions">
+                    <button class="a-button js-next" disabled>Question suivante</button>
+                    <button class="a-button js-prev m-clear">Question précédente</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+
+        <section class="s-result m-hidden g-flux m-pad">
+
+            <div class="s-result--container">
+                <div class="s-result--info">
+                    <span class="t4">Votre résultat</span>
+                    <h1 class="s-result--title t2">Diagramme ESCOT</h1>
+                    <h2 class="t3">des compétences pédagogiques</h2>
+                    <p class="s-result--text">Suite à cet auto positionnement sur le référentiel ESCOT, voici le résultat imagé de vos compétences pédagogiques. Pour chaque domaine de compétences, une couleur symbolise la maturité des compétences associées. Ce résultat est purement indicatif et ne présage pas d'une évaluation en situation des compétences pédagogiques.</p>
+                    <ul class="s-result--legend">
+                        <li>Compétences bien développées et maitrisées</li>
+                        <li>Compétences déjà développée mais pouvant être améliorées</li>
+                        <li>Compétences encore émergentes à développer</li>
+                    </ul>
+                    <button class="a-button js-download">Télécharger en pdf</button>
+
+                    <!-- Debut table a copier -->
+                    <table class="a-table s-result--table">
+                        <tr>
+                            <th>Domaine de compétence</th>
+                            <th>Indicateurs de maturité de la  compétence</th>
+                        </tr>
+                    </table>
+                    <!-- Fin table a copier -->
+                </div>
+
+                <div class="s-result--graph">
+                    <svg width="600px" height="600px" viewBox="0 0 600 600" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(64.000000, 83.000000)" stroke="#FFFFFF" fill="#EDEFF3">
+                                <g transform="translate(139.000000, 0.000000)">
+                                    <!-- E5 -->
+                                    <path id="section-5"
+                                        d="M8.11173039,372.162914 C22.5497697,408.152341 57.5208736,432.263699 96.9933004,432.263699 L97.0727112,432.263699 C149.944039,432.263699 192.804715,389.403019 192.804715,336.531683 C192.804715,283.660357 149.944037,240.799679 97.0727112,240.799679 L96.9933004,240.799679 C92.3972971,240.799679 87.8420915,241.123512 83.3505247,241.764344 C100.438826,285.902768 82.9039153,336.418835 41.4518707,360.351184 C31.0224641,366.372605 19.7555142,370.335188 8.11173039,372.162914 Z"
+                                        ></path>
+                                    <!-- E6 -->
+                                    <path id="section-6"
+                                        d="M185.958707,60.9114968 C171.52358,24.9163001 136.549446,0.799679206 97.0727112,0.799679206 L96.9933004,0.799679206 C44.1219728,0.799679206 1.26129642,43.6603591 1.26129642,96.5316947 C1.26129642,149.403021 44.1219745,192.263699 96.9933004,192.263699 L97.0727112,192.263699 C101.637091,192.263699 106.161253,191.944307 110.622832,191.312207 C93.5424192,147.17625 111.078406,96.6675955 152.526248,72.7376725 C162.983364,66.7002537 174.282385,62.732692 185.958707,60.9114968 Z"
+                                        ></path>
+                                </g>
+                                <g
+                                    transform="translate(236.000000, 216.500000) rotate(60.000000) translate(-236.000000, -216.500000) translate(139.000000, 0.000000)">
+                                    <!-- E4 -->
+                                    <path id="section-4"
+                                        d="M8.11173039,372.162914 C22.5497697,408.152341 57.5208736,432.263699 96.9933004,432.263699 L97.0727112,432.263699 C149.944039,432.263699 192.804715,389.403019 192.804715,336.531683 C192.804715,283.660357 149.944037,240.799679 97.0727112,240.799679 L96.9933004,240.799679 C92.3972971,240.799679 87.8420915,241.123512 83.3505247,241.764344 C100.438826,285.902768 82.9039153,336.418835 41.4518707,360.351184 C31.0224641,366.372605 19.7555142,370.335188 8.11173039,372.162914 Z"
+                                        ></path>
+                                    <!-- E2 -->
+                                    <path id="section-2"
+                                        d="M185.958707,60.9114968 C171.52358,24.9163001 136.549446,0.799679206 97.0727112,0.799679206 L96.9933004,0.799679206 C44.1219728,0.799679206 1.26129642,43.6603591 1.26129642,96.5316947 C1.26129642,149.403021 44.1219745,192.263699 96.9933004,192.263699 L97.0727112,192.263699 C101.637091,192.263699 106.161253,191.944307 110.622832,191.312207 C93.5424192,147.17625 111.078406,96.6675955 152.526248,72.7376725 C162.983364,66.7002537 174.282385,62.732692 185.958707,60.9114968 Z"
+                                        ></path>
+                                </g>
+                                <g
+                                    transform="translate(236.000000, 216.500000) rotate(120.000000) translate(-236.000000, -216.500000) translate(139.000000, 0.000000)">
+                                    <!-- E1 -->
+                                    <path id="section-1"
+                                        d="M8.11173039,372.162914 C22.5497697,408.152341 57.5208736,432.263699 96.9933004,432.263699 L97.0727112,432.263699 C149.944039,432.263699 192.804715,389.403019 192.804715,336.531683 C192.804715,283.660357 149.944037,240.799679 97.0727112,240.799679 L96.9933004,240.799679 C92.3972971,240.799679 87.8420915,241.123512 83.3505247,241.764344 C100.438826,285.902768 82.9039153,336.418835 41.4518707,360.351184 C31.0224641,366.372605 19.7555142,370.335188 8.11173039,372.162914 Z"
+                                        ></path>
+                                    <!-- E3 -->
+                                    <path id="section-3"
+                                        d="M185.958707,60.9114968 C171.52358,24.9163001 136.549446,0.799679206 97.0727112,0.799679206 L96.9933004,0.799679206 C44.1219728,0.799679206 1.26129642,43.6603591 1.26129642,96.5316947 C1.26129642,149.403021 44.1219745,192.263699 96.9933004,192.263699 L97.0727112,192.263699 C101.637091,192.263699 106.161253,191.944307 110.622832,191.312207 C93.5424192,147.17625 111.078406,96.6675955 152.526248,72.7376725 C162.983364,66.7002537 174.282385,62.732692 185.958707,60.9114968 Z"
+                                        ></path>
+                                </g>
+                                <!-- E7 -->
+                                <rect id="section-7" stroke-width="2" x="140.761296" y="121.299679" width="190.543419"
+                                    height="190.464019" rx="95.2320097"></rect>
+                                <!-- E8 -->
+                                <rect id="section-8" stroke-width="2" x="186.410959" y="167.410851" width="99.2440935"
+                                    height="98.2416768" rx="49.1208384"></rect>
+							</g>
+
+							<!-- Debut textes svg a remplacer -->
+
+                            <text font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#000000" text-anchor="middle">
+                                <tspan x="50%" y="44">SOUTENIR</tspan>
+                                <tspan x="50%" y="58">L’APPRENTISSAGE</tspan>
+                            </text>
+                            <text font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#000000" text-anchor="middle">
+                                <tspan x="50%" y="546.210801">PRÉPARER LES</tspan>
+                                <tspan x="50%" y="560.210801">ACTIVITÉS</tspan>
+                            </text>
+                            <text
+                                transform="translate(526.664013, 184.897536) rotate(65.000000) translate(-526.664013, -184.897536) "
+                                font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#000000" text-anchor="middle">
+                                <tspan x="87%" y="181.897536">ORGANISER LA</tspan>
+                                <tspan x="87%" y="195.897536">DYNAMIQUE DE GROUPE</tspan>
+                            </text>
+                            <text
+                                transform="translate(526.602684, 416.455810) rotate(295.000000) translate(-526.602684, -416.455810) "
+                                font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#000000" text-anchor="middle">
+                                <tspan x="87%" y="413.45581">RÉGULER LES </tspan>
+                                <tspan x="87%" y="427.45581">COMPORTEMENTS</tspan>
+                            </text>
+                            <text
+                                transform="translate(67.495804, 173.870952) rotate(295.000000) translate(-67.495804, -173.870952) "
+                                font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#000000" text-anchor="middle">
+                                <tspan x="12%" y="170.870952">DÉVELOPPER LA</tspan>
+                                <tspan x="12%" y="184.870952">MOTIVATION</tspan>
+                            </text>
+                            <text
+                                transform="translate(73.901288, 404.475731) rotate(65.000000) translate(-73.901288, -404.475731) "
+                                font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#000000" text-anchor="middle">
+                                <tspan x="15%" y="405">INDIVIDUALISER</tspan>
+                                <tspan x="15%" y="419">LA FORMATION</tspan>
+                            </text>
+                            <text font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#FFFFFF" text-anchor="middle">
+                                <tspan x="50%" y="288">PILOTER</tspan>
+                                <tspan x="50%" y="302">LA</tspan>
+                                <tspan x="50%" y="317">FORMATION</tspan>
+                            </text>
+                            <text font-family="SourceSansPro-Bold, Source Sans Pro" font-size="11.0265844"
+                                font-weight="bold" letter-spacing="0.918881742" fill="#FFFFFF" text-anchor="middle">
+                                <tspan x="50%" y="230">ÉVALUER</tspan>
+                                <tspan x="50%" y="244">LA FORMATION</tspan>
+							</text>
+
+							<!-- Fin textes svg a remplacer -->
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
